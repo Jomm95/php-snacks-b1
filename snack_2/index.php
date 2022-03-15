@@ -8,9 +8,6 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” 
 
 <?php
 
-// imposto che i parametri del get vadano inseriti, altrimenti si richiederà di farlo
-if (!empty($_GET['name']) && !empty($_GET['email']) && !empty($_GET['age'])) {
-
     $name = $_GET['name'];
     $mail = $_GET['mail'];
     $age = $_GET['age'];
@@ -20,8 +17,6 @@ if (!empty($_GET['name']) && !empty($_GET['email']) && !empty($_GET['age'])) {
     } else {
         echo 'Il permesso ti è negato, riprova ad inserire i dati!';
     }
-
-}
 
 // ?name=thom&mail=vent@mail.com&age=32 stringa da inserire nell'URL di prova
 
