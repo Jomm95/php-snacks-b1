@@ -11,12 +11,8 @@ $myNewParagraph = explode($myDelimiter, $myParagraph);
 
 //ciclo for per visualizzare interno dell'array
  for ($i=0; $i < count($myNewParagraph); $i++) {
-     echo $myNewParagraph[$i];
+     echo "<p>$myNewParagraph[$i]! </p>";
  }
-
-
-// echo '<pre>'; print_r($myNewParagraph); echo '</pre>';
-
 
 ?>
 
@@ -34,7 +30,7 @@ $myNewParagraph = explode($myDelimiter, $myParagraph);
 <?php echo $myParagraph ?>
 
 <h3>Discorso formattato</h3>
-<?php echo $myNewParagraph ?>
+<?php echo "<p>$myNewParagraph[$i] . '!' . '<br>'</p>" ?> 
     
 </body>
 </html>
