@@ -30,7 +30,11 @@ $myNewParagraph = explode($myDelimiter, $myParagraph);
 <?php echo $myParagraph ?>
 
 <h3>Discorso formattato</h3>
-<?php echo "<p>$myNewParagraph[$i] . '!' . '<br>'</p>" ?> 
+<?php 
+ foreach($myNewParagraph as $item){
+     echo '<p>'. $myNewParagraph[$item] . '!' . '</p>';
+}
+?>
     
 </body>
 </html>
