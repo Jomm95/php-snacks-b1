@@ -9,6 +9,7 @@ $myDelimiter = "!";
 
 $myNewParagraph = explode($myDelimiter, $myParagraph);
 
+echo '<h1>Testo modificato con ciclo for.</h1>';
 //ciclo for per visualizzare interno dell'array
  for ($i=0; $i < count($myNewParagraph) -1; $i++) {
      echo "<p>$myNewParagraph[$i]! </p>";
@@ -29,10 +30,16 @@ $myNewParagraph = explode($myDelimiter, $myParagraph);
 <h3>Discorso originale</h3>
 <?php echo $myParagraph ?>
 
-<h3>Discorso formattato</h3>
+<h3>Discorso formattato con foreach</h3>
 <?php 
- foreach($myNewParagraph as $item){
-     echo '<p>'. $myNewParagraph[$item] . '!' . '</p>';
+
+$counter = 0;
+foreach($myNewParagraph as $item){
+    echo '<p>'. $item . '!' . '</p>';
+    $counter++;
+    if( ++$counter >= $myNewParagraph) {
+        break;
+    }
 }
 ?>
     
