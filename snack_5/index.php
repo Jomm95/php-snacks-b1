@@ -10,7 +10,7 @@ $myDelimiter = "!";
 $myNewParagraph = explode($myDelimiter, $myParagraph);
 
 //ciclo for per visualizzare interno dell'array
- for ($i=0; $i < count($myNewParagraph); $i++) {
+ for ($i=0; $i < count($myNewParagraph) -1; $i++) {
      echo "<p>$myNewParagraph[$i]! </p>";
  }
 
